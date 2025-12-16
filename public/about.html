@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - AI Call Center</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #333;
+      min-height: 100vh;
+      padding: 10px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    nav {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      color: #4f46e5;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover, nav a.active {
+      background: #4f46e5;
+      color: white;
+    }
+
+    h1 {
+      color: #fff;
+      text-align: center;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
+    }
+
+    .content {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      line-height: 1.8;
+    }
+
+    h2 {
+      color: #4f46e5;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-size: clamp(1.3rem, 3vw, 1.8rem);
+      border-bottom: 2px solid #4f46e5;
+      padding-bottom: 8px;
+    }
+
+    h2:first-of-type {
+      margin-top: 0;
+    }
+
+    h3 {
+      color: #7c3aed;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    }
+
+    p {
+      margin-bottom: 15px;
+      color: #4b5563;
+      font-size: clamp(0.95rem, 2vw, 1.05rem);
+    }
+
+    ul, ol {
+      margin-left: 25px;
+      margin-bottom: 15px;
+      color: #4b5563;
+    }
+
+    li {
+      margin-bottom: 8px;
+      font-size: clamp(0.95rem, 2vw, 1.05rem);
+    }
+
+    code {
+      background: #f3f4f6;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      color: #dc2626;
+      font-size: 0.9em;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    .feature-card {
+      background: linear-gradient(135deg, #f0f9ff 0%, #e0e7ff 100%);
+      padding: 20px;
+      border-radius: 10px;
+      border-left: 4px solid #4f46e5;
+    }
+
+    .feature-card h4 {
+      color: #4f46e5;
+      margin-bottom: 10px;
+      font-size: clamp(1rem, 2vw, 1.2rem);
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .tech-badge {
+      background: #4f46e5;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: clamp(0.85rem, 1.5vw, 0.95rem);
+    }
+
+    .highlight {
+      background: #fef3c7;
+      padding: 15px;
+      border-left: 4px solid #f59e0b;
+      border-radius: 4px;
+      margin: 20px 0;
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        padding: 20px 15px;
+      }
+
+      ul, ol {
+        margin-left: 20px;
+      }
+
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="/">🏠 Dashboard</a>
+      <a href="/about" class="active">ℹ️ About</a>
+    </nav>
+
+    <h1>🧠 About AI Call Center</h1>
+
+    <div class="content">
+      <h2>📖 Overview</h2>
+      <p>
+        AI Call Center is an intelligent, automated phone system that uses Twilio's Voice API to conduct interactive voice conversations with callers. The system collects user information through natural speech recognition and stores it for later review through a beautiful web dashboard.
+      </p>
+
+      <h2>✨ Key Features</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h4>🎤 Voice Recognition</h4>
+          <p>Advanced speech-to-text technology captures caller responses accurately using Twilio's enhanced speech model.</p>
+        </div>
+        <div class="feature-card">
+          <h4>📊 Real-time Dashboard</h4>
+          <p>Monitor all calls in real-time with a responsive, modern dashboard showing call statistics and logs.</p>
+        </div>
+        <div class="feature-card">
+          <h4>💾 Data Collection</h4>
+          <p>Automatically collects name, email, age, location, and introduction from callers through conversational flow.</p>
+        </div>
+        <div class="feature-card">
+          <h4>📅 Date Filtering</h4>
+          <p>Filter call logs by date to analyze specific time periods and track call patterns.</p>
+        </div>
+        <div class="feature-card">
+          <h4>🔄 Auto-refresh</h4>
+          <p>Dashboard automatically refreshes every 20 seconds to show the latest call data.</p>
+        </div>
+        <div class="feature-card">
+          <h4>📱 Fully Responsive</h4>
+          <p>Works seamlessly on desktop, tablet, and mobile devices with adaptive layouts.</p>
+        </div>
+      </div>
+
+      <h2>🛠️ Technology Stack</h2>
+      <div class="tech-stack">
+        <span class="tech-badge">Node.js</span>
+        <span class="tech-badge">Express.js</span>
+        <span class="tech-badge">Twilio API</span>
+        <span class="tech-badge">JavaScript</span>
+        <span class="tech-badge">HTML5</span>
+        <span class="tech-badge">CSS3</span>
+      </div>
+
+      <h2>🔧 How It Works</h2>
+      
+      <h3>1. Call Initiation</h3>
+      <p>When a call is received or initiated, Twilio connects to the <code>/voice</code> endpoint of the server.</p>
+
+      <h3>2. Conversation Flow</h3>
+      <p>The AI system guides the caller through a series of questions:</p>
+      <ol>
+        <li><strong>Name Collection:</strong> "Hello! Please say your full name after the beep."</li>
+        <li><strong>Email Collection:</strong> "Now please tell your email address clearly."</li>
+        <li><strong>Age Collection:</strong> "Great! Now please tell me your age clearly."</li>
+        <li><strong>Location Collection:</strong> "Perfect! Now please say your city and state or country clearly."</li>
+        <li><strong>Introduction:</strong> "Finally, give a short introduction about yourself."</li>
+      </ol>
+
+      <h3>3. Data Storage</h3>
+      <p>All collected information is stored in <code>logs.json</code> with timestamps and caller details.</p>
+
+      <h3>4. Dashboard Display</h3>
+      <p>The web dashboard fetches data from <code>/logs</code> endpoint and displays it in an organized table format with statistics.</p>
+
+      <h2>📡 API Endpoints</h2>
+      
+      <h3>GET /</h3>
+      <p>Serves the main dashboard interface.</p>
+
+      <h3>POST /voice</h3>
+      <p>Handles incoming voice calls and processes speech input using TwiML responses.</p>
+
+      <h3>GET /logs</h3>
+      <p>Returns all call logs in JSON format with statistics.</p>
+
+      <h3>POST /call-me</h3>
+      <p>Initiates a test call to a configured phone number.</p>
+
+      <h3>GET /test</h3>
+      <p>Health check endpoint to verify server status.</p>
+
+      <h2>🔐 Environment Variables</h2>
+      <p>The application requires the following environment variables:</p>
+      <ul>
+        <li><code>TWILIO_ACCOUNT_SID</code> - Your Twilio account SID</li>
+        <li><code>TWILIO_AUTH_TOKEN</code> - Your Twilio authentication token</li>
+        <li><code>TWILIO_PHONE_NUMBER</code> - Your Twilio phone number (from)</li>
+        <li><code>TEST_PHONE_NUMBER</code> - Phone number for test calls (to)</li>
+        <li><code>BASE_URL</code> - Your server's public URL (for webhooks)</li>
+        <li><code>PORT</code> - Server port (default: 5500)</li>
+      </ul>
+
+      <div class="highlight">
+        <strong>⚠️ Security Note:</strong> Never commit your <code>.env</code> file to version control. Always use environment variables for sensitive credentials.
+      </div>
+
+      <h2>🚀 Deployment</h2>
+      <p>This application is designed to be deployed on platforms like:</p>
+      <ul>
+        <li><strong>Render:</strong> Easy deployment with automatic HTTPS</li>
+        <li><strong>Heroku:</strong> Simple git-based deployment</li>
+        <li><strong>AWS EC2:</strong> Full control over infrastructure</li>
+        <li><strong>DigitalOcean:</strong> Affordable VPS hosting</li>
+      </ul>
+
+      <h2>📊 Dashboard Features</h2>
+      
+      <h3>Statistics Cards</h3>
+      <ul>
+        <li><strong>Total Calls:</strong> Shows the total number of calls processed</li>
+        <li><strong>Server Status:</strong> Real-time server connectivity indicator</li>
+        <li><strong>Last Call:</strong> Time elapsed since the most recent call</li>
+        <li><strong>Complete Profiles:</strong> Number of calls with all information collected</li>
+      </ul>
+
+      <h3>Call Logs Table</h3>
+      <p>Displays detailed information for each call including:</p>
+      <ul>
+        <li>Phone number (formatted)</li>
+        <li>Caller name</li>
+        <li>Email address</li>
+        <li>Age</li>
+        <li>Location</li>
+        <li>Personal introduction</li>
+        <li>Call timestamp</li>
+      </ul>
+
+      <h2>🎯 Use Cases</h2>
+      <ul>
+        <li><strong>Customer Support:</strong> Automated initial information gathering before connecting to agents</li>
+        <li><strong>Lead Generation:</strong> Collect prospect information through phone calls</li>
+        <li><strong>Surveys:</strong> Conduct automated phone surveys</li>
+        <li><strong>Appointment Scheduling:</strong> Gather customer details for appointments</li>
+        <li><strong>Event Registration:</strong> Collect attendee information via phone</li>
+      </ul>
+
+      <h2>🔮 Future Enhancements</h2>
+      <ul>
+        <li>Integration with CRM systems (Salesforce, HubSpot)</li>
+        <li>Email notifications for new calls</li>
+        <li>Call recording and playback</li>
+        <li>Multi-language support</li>
+        <li>Advanced analytics and reporting</li>
+        <li>SMS follow-up automation</li>
+        <li>AI-powered sentiment analysis</li>
+      </ul>
+
+      <h2>📄 License</h2>
+      <p>This project is open source and available under the ISC License.</p>
+
+      <h2>👨‍💻 Developer</h2>
+      <p>Built with ❤️ using modern web technologies and Twilio's powerful communication APIs.</p>
+    </div>
+  </div>
+</body>
+</html>
