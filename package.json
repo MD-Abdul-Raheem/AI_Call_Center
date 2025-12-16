@@ -1,6 +1,6 @@
 {
   "name": "ai_call_center",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "ai_call_center_server.js",
   "scripts": {
     "start": "node ai_call_center_server.js",
