@@ -11,7 +11,7 @@
   "license": "ISC",
   "description": "An intelligent automated phone system powered by Twilio Voice API with real-time dashboard",
   "engines": {
-    "node": "18.x"
+    "node": "24.x"
   },
   "dependencies": {
     "body-parser": "^2.2.0",
